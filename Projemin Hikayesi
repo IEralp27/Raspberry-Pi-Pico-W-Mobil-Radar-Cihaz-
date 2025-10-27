@@ -1,0 +1,24 @@
+Merhaba Dostlar bugün size bu Mobil Radarı Niye Yptım Onu anlatıcağım ben anlatmadan önce siz çayınızı veya kahvenizi hazırlayın o zaman başlayalım
+
+Merhaba, ben Eralp.
+
+Bu sistemi geliştirmemdeki ana amaç, gözle görülmeyen bir aracı kontrol etme yeteneğimi test etmekti. Bu projeyi tamamen kendimi denemek amacıyla geliştiriyorum. Bu mobil radar ile etraftaki nesnelerin yakınlık ve uzaklık gibi değerlerini sadece bir web sitesi üzerinden okuyabilmek bile benim için büyük bir başarıdır.
+
+Bunun gibi projeler, ileride yapacağım daha büyük projelere temelimi hazırlamaktadır. Sonuçta, insan ihtiyaçlarını giderebilecek projeler geliştirmek istiyorum. Örneğin, görme engelli bireyler için robot köpekler gibi teknolojiler, görme engellerini yüksek oranda aşmalarını sağlayacaktır. Bu durum sandığımızdan çok daha yakındır.
+
+Bu tür projeler, geleceğe atılan birer başlangıç adımı olarak kabul edilebilir. Daha kapsamlı bakarsak; duyma engelliler için robot köpeğin üzerindeki ekranda yazılar yazacak, görme engelliler için sesli konuşma yapacak, konuşma engelliler için işaret dilini tercüme edebilecek veya hareket engelliler için yardımcı itiş gücü sağlayabilecek pek çok örnek mevcuttur.
+
+Tasarım Süreci ve Yapay Zekâ Macerası
+Şimdi bu mobil radarı nasıl tasarladığıma gelirsek... Normal bir öğrenci olarak yurttayken bir gün aklıma "Acaba mobil radar yapabilir miyim?" fikri geldi. Hocanın bahsettiği Pico W geldi aklıma ve hemen araştırmalara başladım. İlk olarak Gemini AI'a böyle bir şeyin mümkün olup olmadığını sordum. Olumlu yanıt alınca, Gemini AI ile tartışarak mobil radar fikrini somutlaştırdım.
+
+Tasarımına fazla bütçe ayıramayacağım için gerekli malzemeleri sipariş ettim. Ertesi gün gelen malzemeleri tek tek inceledim. Bu bileşenleri birleştirebilmek için Pico W'nin şemasını buldum. Motorları ve LED'leri nerede, nasıl kontrol edebileceğimi araştırdıktan sonra devreyi kurmaya başladım.
+
+Kurulum aşamasında yapay zekâdan yardım aldım ancak dokümantasyonum eksikti. Bu nedenle, Gemini'den mobil radar için kod yazmasını istedim. İlk başta her şey güzel gidiyordu fakat maalesef Gemini'den on kez kod yazdırmama rağmen kodların çoğu hatalıydı veya istediğim gibi çalışmıyordu (örneğin, durması gereken servo motor çalışmaya devam ediyordu).
+
+Bu yüzden başka bir yapay zekâya, ChatGPT / OpenAI'a geçtim. ChatGPT, Gemini'ye göre daha stabil kod yazıyordu, ancak ne yazık ki beş kez kod yazdırmama rağmen web sitesi bağlantısı bir türlü çalışmadı. Ben de internette araştırma yaptım. İnternet forumlarında bir yorumda Claude AI'ın harika kod yazdığını öğrendim. Hemen denedim; ana kodu yazdırdım ve ardından beş kez güncellemesini istedim. Sonuçta harika bir kod ortaya çıktı!
+
+Buradan ne anlıyoruz? Yapay zekâ henüz yazılımcıların işini elinden alamaz!
+
+Neyse, konumuza dönersek, kodu denediğimde sorunsuz çalışıyordu ve mobil radarım tamamlanmış oldu.
+
+Eğer hikâyemi beğendiyseniz çok mutlu olurum. Bir sonraki projemde görüşmek üzere, herkese iyi günler dilerim.
