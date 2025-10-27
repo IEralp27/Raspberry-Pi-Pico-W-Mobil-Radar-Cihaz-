@@ -1,0 +1,85 @@
+🤖 Pico W Mobil Radar: Uzaktan Kontrollü Mesafe Algılama Sistemi
+Yazar: Eralp (Mekatronik Mühendisi & Geliştirici)
+
+📌 Proje Özeti
+Bu proje, Raspberry Pi Pico W mikrodenetleyicisi, bir ultrasonik sensör ve servo motorlar kullanılarak tasarlanmış, Wi-Fi üzerinden veri okuması yapılabilen bir mobil radar prototipidir. Ana amaç, geliştiricinin hem yazılım hem de donanım yetkinliğini ölçmek ve küçük ölçekli IoT çözümleri üretme potansiyelini test etmektir.
+
+📖 Projenin Hikayesi ve Motivasyon
+Merhaba, ben Eralp.
+
+Bu sistemi geliştirmemdeki ana amaç, gözle görülmeyen bir aracı kontrol etme yeteneğimi test etmekti. Bu projeyi tamamen kendimi denemek amacıyla geliştiriyorum. Bu mobil radar ile etraftaki nesnelerin yakınlık ve uzaklık gibi değerlerini sadece bir web sitesi üzerinden okuyabilmek bile benim için büyük bir başarıdır.
+
+Bunun gibi projeler, ileride yapacağım daha büyük projelere temelimi hazırlamaktadır. Sonuçta, insan ihtiyaçlarını giderebilecek projeler geliştirmek istiyorum. Örneğin, görme engelli bireyler için robot köpekler gibi teknolojiler, görme engellerini yüksek oranda aşmalarını sağlayacaktır. Bu durum sandığımızdan çok daha yakındır.
+
+Tasarım Süreci ve Yapay Zekâ Macerası
+Normal bir öğrenci olarak yurttayken bir gün aklıma "Acaba mobil radar yapabilir miyim?" fikri geldi. Hocanın bahsettiği Pico W geldi aklıma ve hemen araştırmalara başladım. İlk olarak Gemini AI'a böyle bir şeyin mümkün olup olmadığını sordum. Olumlu yanıt alınca, Gemini AI ile tartışarak mobil radar fikrini somutlaştırdım.
+
+Gerekli malzemeleri sipariş ettim ve devreyi kurmaya başladım. Bu süreçte yapay zekâdan kod yardımı aldım. Gemini, maalesef hatalı kodlar verdi. Ardından denediğim ChatGPT'de ise web sitesi bağlantısı sorunları yaşadım.
+
+Sonunda, Claude AI ile çalışarak ana kodu elde ettim ve beş kez güncellemesini istedim. Sonuçta harika bir kod ortaya çıktı ve mobil radarım tamamlandı!
+
+Buradan ne anlıyoruz? Yapay zekâ henüz yazılımcıların işini elinden alamaz! Kodu denediğimde sorunsuz çalışıyordu ve mobil radarım tamamlanmış oldu.
+
+Geliştirici Notu: Bu projeyi geliştirme sebebim, kendimi bu yolda ne kadar hazır olduğumu ölçmek ve elimdekilerle neler geliştirebileceğimi görmektir. Bu yolda bana destek olan herkese teşekkürlerimi sunarım.
+
+⚙️ Teknik Dokümantasyon
+1. Gerekli Malzeme Listesi (BOM)
+1 adet Raspberry Pi Pico W
+
+3 adet Servo motor
+
+1 adet Ultrasonik Sensör
+
+3 adet farklı renklerde LED
+
+1 adet Buzzer
+
+Yeterli miktarda Jumper Kablo
+
+2. Yazılım ve Geliştirme Ortamı
+Programlama Dili: MicroPython
+
+Geliştirme Ortamı: Tercihe bağlı (Thonny, VS Code vb.)
+
+Yapay Zeka Destek: Gemini AI, ChatGPT, Claude AI (Final Kod Desteği)
+
+3. Bağlantı Şeması (Devre Düzeni)
+
+Pico W Pini,Bileşen,Fonksiyon
+GP_x,Servo Motor 1,Kontrol Pini
+GP_y,Servo Motor 2,Kontrol Pini
+GP_z,Servo Motor 3,Kontrol Pini
+GP_a,Ultrasonik Sensör,TRIG Pini
+GP_b,Ultrasonik Sensör,ECHO Pini
+GP_c,LED (Kırmızı),Kontrol Pini
+GP_d,LED (Sarı),Kontrol Pini
+GP_e,LED (Yeşil),Kontrol Pini
+GP_f,Buzzer,Kontrol Pini
+VBUS/VCC,Tüm pozitif güç bağlantıları,5V Güç
+GND,Tüm toprak bağlantıları,Toprak
+
+
+  ⚠️ Önemli Güvenlik Notu
+Cihazınızı korumak ve stabil çalışmasını sağlamak için benim göz ardı ettiğim bu noktaları lütfen siz uygulamaya özen gösterin.
+
+Bu projede LED'ler için akım sınırlayıcı direnç kullanılmamış ve servo motorların güç girişleri doğrudan Raspberry Pi Pico W üzerinden sağlanmıştır.
+
+Önerilen Ekipmanlar:
+
+3 adet 220 ohm (veya uygun değerde) direnç (LED'ler için).
+
+Servo motorlara yeterli akım sağlayacak harici bir 5V güç kaynağı (Pico W'yi aşırı yüklenmeden korumak için).
+
+🚀 Kullanım ve Kurulum
+Depodan tüm .py uzantılı kod dosyalarını indirin.
+
+config.py dosyasını açarak Wi-Fi SSID ve şifre bilgilerinizi giriniz.
+
+Tüm kod dosyalarını Thonny veya tercih ettiğiniz IDE üzerinden Raspberry Pi Pico W'ye yükleyiniz.
+
+Bağlantı şemasına göre devreyi kurunuz.
+
+Pico W'yi çalıştırın ve seri porttan atanan IP adresini alarak web tarayıcınıza giriniz.
+
+🤝 Katkıda Bulunma
+Merhaba dostlar, verdiğim Python dosyasını isterseniz kendi projelerinizde deneyebilirsiniz. Herhangi bir sorunuz olursa dile getirmekten çekinmeyin. İyi geliştirmeler!
